@@ -7,6 +7,7 @@
 body{
   font-family: 'Inter', sans-serif;
   background-color: #90D5FF;
+  overflow-x: hidden;
 }
 
 header{
@@ -134,7 +135,7 @@ button:hover {
 transform: rotate(0deg); }
 100% {
 transform: rotate(360deg);
- } 
+  } 
 }
 
 .loading-chef {
@@ -158,10 +159,18 @@ transform: rotate(360deg);
 }
 
 @media (max-width: 480px) {
-.ingredients-card {
-  width: 100%;
+  .ingredients-card {
+    width: 100%;
+  }
+  .recipe-card {
+    width: 100%;
+  }
+  form {
+    padding: 0 1rem;
+  }
 }
-.recipe-card{
+
+main {
   width: 100%;
-}
+  padding: 0 1rem
 }
